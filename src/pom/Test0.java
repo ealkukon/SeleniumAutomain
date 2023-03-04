@@ -20,6 +20,6 @@ public class Test0 {
 	    d.passwordtb("manager");
 	    //ele.sendKeys("admin");
 
-	}
+	}//execution from here
 
 }

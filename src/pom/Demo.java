@@ -7,20 +7,20 @@ import org.openqa.selenium.support.PageFactory;
 
 public class Demo {
 	@FindBy(id="email")
-	private WebElement emailaddresstb;
+	private WebElement emailaddresstb; //declaration
 	
 	@FindBy(id="pass")
-	private WebElement passwordtb;
+	private WebElement passwordtb;     //declaration
 	
 	
 	Demo(WebDriver driver) {
-		PageFactory.initElements(driver,this);
+		PageFactory.initElements(driver,this);  //Initialization
 	}
 	
-	public void emailtb(String email) {
+	public void emailtb(String email) {         // Utilization
 		emailaddresstb.sendKeys(email);
 		}
-	public void passwordtb(String pass) {
+	public void passwordtb(String pass) {       //Utilization
 		passwordtb.sendKeys(pass);
 	}
 }
