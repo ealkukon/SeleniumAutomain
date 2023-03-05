@@ -12,14 +12,14 @@ public class Tc1 {
 	public WebDriver driver;
 	@BeforeMethod
 	public void openapp() {
-		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","./kmsoftware/chromedriver.exe");
 	    driver=new ChromeDriver();
 	    driver.get("https://www.facebook.com/");
 	}
 	
 	@Test
 	public void login() {
-		driver.findElement(By.linkText("Forgot Password?")).click();
+		driver.findElement(By.linkText("Forgot password?")).click();
 		Reporter.log(driver.getTitle(),true);
 		Reporter.log(driver.getCurrentUrl(),true);
 		}

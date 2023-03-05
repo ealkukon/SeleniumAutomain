@@ -12,7 +12,7 @@ public class Tc2 {
 	public WebDriver driver;
 	@BeforeMethod
 	public void openapp() {
-		System.setProperty("webdriver.chrome.driver","./software/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","./kmsoftware/chromedriver.exe");
 	    driver=new ChromeDriver();
 	    driver.get("https://www.facebook.com/");
 	}
