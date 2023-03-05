@@ -14,7 +14,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 
-
+// Parallel two browser running  as same time chrome and fire fox browser same application 
 
 
 public class Test3 {
